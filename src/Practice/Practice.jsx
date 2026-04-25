@@ -4,6 +4,9 @@ import AnimatedButton from "./AnimatedButton";
 import FeaturedList from "./FeaturedList";
 import DraggableCard from "./DraggableCard";
 import DissmissAbleAlert from "./DissmissAbleAlert";
+import StepSwitcher from "./StepSwitcher";
+import CollapsibleList from "./CollableList";
+import LiveBadge from "./LiveBadge";
 
 const Practice = () => {
   return (
@@ -51,8 +54,24 @@ const Practice = () => {
       <DraggableCard />
       </div> */}
 
-      <div className="box">
+      {/* Practice 6 */}
+      {/* <div className="box">
       <DissmissAbleAlert />
+      </div> */}
+
+      {/* Practice 7 */}
+      {/* <div className="box">
+      <StepSwitcher />
+      </div> */}
+
+      {/* Practice 8 */}
+      {/* <div className="box">
+      <CollapsibleList />
+      </div> */}
+
+      {/* Practice 9 */}
+      <div className="box">
+      <LiveBadge />
       </div>
     </>
   );
