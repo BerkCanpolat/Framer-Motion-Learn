@@ -1,6 +1,7 @@
 import Animationcontrols from "./Components/Animationcontrols"
 import BasicsOfMotion from "./Components/BasicsOfMotion"
 import Gestures from "./Components/Gestures"
+import ViewBasedAnimations from "./Components/ViewBasedAnimations"
 import Practice from "./Practice/Practice"
 
 
@@ -11,7 +12,8 @@ function App() {
       {/* <BasicsOfMotion /> */}
       {/* <Practice /> */}
       {/* <Gestures /> */}
-      <Animationcontrols />
+      {/* <Animationcontrols /> */}
+      <ViewBasedAnimations />
     </>
   )
 }
