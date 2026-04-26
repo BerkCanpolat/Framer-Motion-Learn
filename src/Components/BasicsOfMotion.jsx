@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import { motion } from "motion/react"
+import { AnimatePresence, motion } from "motion/react"
 
 const BasicsOfMotion = () => {
 
 
     const [isVisible, setIsVisible] = useState(true);
-
 
 
   return (
@@ -15,24 +14,35 @@ const BasicsOfMotion = () => {
         height: "100vh",
         gap: "0.8rem"
     }}>
-        <button
+        <motion.button
+        layout
         onClick={() => setIsVisible(!isVisible)}
-         className='example-button'>Show/Hide</button>
+         className='example-button'>
+            Show/Hide
+        </motion.button>
+        <AnimatePresence mode='popLayout'>
         {
             isVisible && (
                 <motion.div
                 initial={{
-                    rotate: '0deg'
+                    rotate: '0deg',
+                    scale: 0,
+                    y: 0
                 }} 
                 animate={{
-                    rotate: "180deg"
+                    rotate: "180deg",
+                    scale: 1,
+                    // y: 50,
+                    y: [0, 150, -150, -150, 0]
                 }}
                 exit={{
-                    rotate: "0deg"
+                    rotate: "0deg",
+                    scale: 0,
+                    y: 0
                 }}
                 transition={{
                     duration: 1,
-                    ease: "circIn"
+                    ease: "backInOut"
                 }}
                 style={{
                     width: 150,
@@ -44,6 +54,7 @@ const BasicsOfMotion = () => {
 
             )
         }
+         </AnimatePresence>
     </div>
   )
 }
