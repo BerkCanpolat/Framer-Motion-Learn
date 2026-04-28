@@ -45,9 +45,9 @@ const Practice = () => {
 
 
       {/* Practice 4 */}
-      {/* <div className="box">
+      <div className="box">
       <FeaturedList />
-      </div> */}
+      </div>
 
       {/* Practice 5 */}
       {/* <div className="box">
@@ -70,9 +70,9 @@ const Practice = () => {
       </div> */}
 
       {/* Practice 9 */}
-      <div className="box">
+      {/* <div className="box">
       <LiveBadge />
-      </div>
+      </div> */}
     </>
   );
 };

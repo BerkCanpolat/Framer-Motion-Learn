@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 .example-button {
   background: rgb(86, 1, 245);
   font-size: 1.8rem;
