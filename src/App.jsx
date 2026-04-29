@@ -8,6 +8,9 @@ import ProfileCard from "./PracticeSecond/ProfileCard"
 import RandomContent from "./Projects/ScrollAnimation/RandomContent"
 import ScrollAnimation from "./Projects/ScrollAnimation/ScrollAnimation"
 import {ReactLenis} from "lenis/react";
+import RandomContentPractice from "./Projects/ScrollPractice/RandomContentPractice"
+import ScrollPractice from "./Projects/ScrollPractice/ScrollPractice"
+import ScrollAnimationTwo from "./Projects/ScrollAnimationTwo/ScrollAnimationTwo"
 
 
 
@@ -25,11 +28,19 @@ function App() {
       {/* <ProfileCard /> */}
 
       {/* Scroll Animation */}
-      <RandomContent children={"Random Top Content"} />
+      {/* <RandomContent children={"Random Top Content"} />
 
       <ScrollAnimation />
 
-      <RandomContent children={"Random Bottom Content"} />
+      <RandomContent children={"Random Bottom Content"} /> */}
+
+      {/* Practice Scroll */}
+      {/* <RandomContentPractice children={"Practice Top Content"} />
+      <ScrollPractice />
+      <RandomContentPractice children={"Practice Bottom Content"} /> */}
+
+      {/* Scroll Projects Two */}
+      <ScrollAnimationTwo />
     </ReactLenis>
   )
 }
