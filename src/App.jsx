@@ -11,6 +11,8 @@ import {ReactLenis} from "lenis/react";
 import RandomContentPractice from "./Projects/ScrollPractice/RandomContentPractice"
 import ScrollPractice from "./Projects/ScrollPractice/ScrollPractice"
 import ScrollAnimationTwo from "./Projects/ScrollAnimationTwo/ScrollAnimationTwo"
+import ScrollCard from "./Projects/ScrollCard/ScrollCard"
+import HomePage from "./Projects/Demo/HomePage"
 
 
 
@@ -40,7 +42,13 @@ function App() {
       <RandomContentPractice children={"Practice Bottom Content"} /> */}
 
       {/* Scroll Projects Two */}
-      <ScrollAnimationTwo />
+      {/* <ScrollAnimationTwo /> */}
+
+      {/* Scroll Card */}
+      {/* <ScrollCard /> */}
+
+      {/* DEMO PROJECT */}
+      <HomePage />
     </ReactLenis>
   )
 }
