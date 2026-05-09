@@ -13,6 +13,9 @@ import ScrollPractice from "./Projects/ScrollPractice/ScrollPractice"
 import ScrollAnimationTwo from "./Projects/ScrollAnimationTwo/ScrollAnimationTwo"
 import ScrollCard from "./Projects/ScrollCard/ScrollCard"
 import HomePage from "./Projects/Demo/HomePage"
+import { BrowserRouter, Route, Router, Routes } from "react-router"
+import ScrollNavbar from "./Projects/Demo/DemoComponents/ScrollNavbar"
+import PageTwo from "./Projects/Demo/PageTwo"
 
 
 
@@ -48,7 +51,15 @@ function App() {
       {/* <ScrollCard /> */}
 
       {/* DEMO PROJECT */}
-      <HomePage />
+
+      <BrowserRouter>
+      <ScrollNavbar />
+      <Routes>
+        <Route path="/" element={<HomePage />}/>
+        <Route path="two" element={<PageTwo />}/>
+      </Routes>
+      </BrowserRouter>
+
     </ReactLenis>
   )
 }
