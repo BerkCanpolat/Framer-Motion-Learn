@@ -8,7 +8,6 @@ const ScrollAnimationA1 = () => {
   const mainRef = useRef(null);
 
   const sections = 10;
-  const flipKart = 360;
 
   const { scrollYProgress } = useScroll(
     {
@@ -126,7 +125,7 @@ const slideX = useTransform(
 
           <motion.div 
           style={{ maskImage: maskDiv }}
-          className='absolute inset-0 bg-gray-100 flex flex-col items-center justify-center gap-5'>
+          className='absolute inset-0 flex flex-col items-center justify-center gap-5'>
             <h2 className='text-6xl'>Berk Canpolat</h2>
             <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dicta similique <br /> quos culpa sed vero laboriosam obcaecati!</p>
           </motion.div>
