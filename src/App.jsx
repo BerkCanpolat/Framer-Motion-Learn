@@ -16,6 +16,7 @@ import HomePage from "./Projects/Demo/HomePage"
 import { BrowserRouter, Route, Router, Routes } from "react-router"
 import ScrollNavbar from "./Projects/Demo/DemoComponents/ScrollNavbar"
 import PageTwo from "./Projects/Demo/PageTwo"
+import PageThree from "./Projects/Demo/PageThree"
 
 
 
@@ -57,6 +58,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />}/>
         <Route path="two" element={<PageTwo />}/>
+        <Route path="three" element={<PageThree />}/>
       </Routes>
       </BrowserRouter>
 

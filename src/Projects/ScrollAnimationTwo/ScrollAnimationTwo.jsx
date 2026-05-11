@@ -47,9 +47,9 @@ const textUp = useTransform(
   return (
 
     <div className='overflow-clip' ref={targetRef}>
-      <div className='text-center z-20 h-screen pt-90 bg-[#990933] text-white'>
+      {/* <div className='text-center z-20 h-screen pt-90 bg-[#990933] text-white'>
         <motion.h2 className='text-8xl' style={{ opacity:opacityText, y:textUp}}>DENEME</motion.h2>
-      </div>
+      </div> */}
       <div className='h-dvh w-full bg-[#990933] grid place-items-center sticky top-0'>
         <motion.div 
         style={{ y:logoY }}

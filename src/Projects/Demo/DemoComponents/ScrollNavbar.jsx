@@ -11,7 +11,9 @@ const ScrollNavbar = () => {
             <Link to={"two"}>
             <li className='bg-amber-200 px-5 py-2.5 rounded-2xl cursor-pointer'>Animation 2</li>
             </Link>
+            <Link to={"three"}>
             <li className='bg-amber-200 px-5 py-2.5 rounded-2xl cursor-pointer'>Animation 3</li>
+            </Link>
         </ul>
     </div>
   )

@@ -112,7 +112,7 @@ const slideX = useTransform(
     <div ref={mainRef}>
 
       <div
-      style={{ perspective: "2000px" }}
+      style={{ perspective: "2000px" }} 
       className='sticky top-0'>
 
         <motion.div 
@@ -125,7 +125,7 @@ const slideX = useTransform(
 
           <motion.div 
           style={{ maskImage: maskDiv }}
-          className='absolute inset-0 flex flex-col items-center justify-center gap-5'>
+          className='absolute inset-0 flex flex-col items-center justify-center gap-5 bg-gray-100'>
             <h2 className='text-6xl'>Berk Canpolat</h2>
             <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dicta similique <br /> quos culpa sed vero laboriosam obcaecati!</p>
           </motion.div>
